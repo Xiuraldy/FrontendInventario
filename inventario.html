@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario</title>
+  <link href="css/inventario.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="./assets/logo_inventario.png">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="text-header">Inventario</div>
+      <div class="search">
+        <div class="content-select-search">
+          <select class="select-search" id="select-search">
+            <option value="Material">Material</option>
+            <option value="Texto breve de material">Texto</option>
+          </select>
+        </div>
+        <input type="text" class="search" placeholder="Buscar" aria-label="Search" id="search" onkeyup="return submit(event);">
+        <button class="btn-search" id="submit" onclick="search()"><img src="assets/icon/lupa.png" alt=""></button>
+      </div>
+      <div class="logo-header"><img src="assets/logo/logo_doria.png" alt=""></div>
+    </div>
+  </header>
+  <div class="content">
+    <table class="table-inventory" id="table-inventory">
+      <thead>
+        <tr>
+          <th>Material</th>
+          <th>Texto breve de material</th>
+          <th>Ce.</th>
+          <th>UMB</th>
+          <th>Libre utilización</th>
+        </tr>
+      </thead>
+      <tbody id="data-sheet">
+      </tbody>
+    </table>
+  </div>
+  <div class="content-buttons-pagination">
+    <button class="buttons-pagination" name="previous" onclick="nextAndPrevious(-1)">
+      ← Anterior
+    </button>
+    <button class="buttons-pagination" name="next" onclick="nextAndPrevious(1)">
+      Siguiente →
+    </button>
+  </div>
+  <div class="paginator"><h3>Página <span id="paginator">1</span><span id="paginatorEnd"></span></div>
+  <script src="//sheetdb.io/api/js"></script>
+  <script src="js/data.js"></script>
+</body>
+</html>

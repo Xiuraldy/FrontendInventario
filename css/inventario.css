@@ -1,0 +1,439 @@
+body{
+    background-color: white;
+    margin: 0%;
+    background-image: url(../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    background: darkblue;
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Raleway',"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 45px;
+    width: 100%;
+    height: 80px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-search{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-search img{
+    width: 50px;
+}
+
+.btn-search:hover {
+    transition: 0.8s;
+    -webkit-transform:scale(0.75);transform:scale(0.75);
+    transition: 0.8s;
+    -webkit-transform:scale(-0.75);transform:scale(-0.75);
+}
+
+.logo-header, .text-header, .search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header-pag2{
+    display: flex;
+    align-items: center;
+}
+
+.logo-header {
+    padding-top: 18px;
+}
+
+.text-header {
+    font-size: 40px;
+    font-family: 'Raleway',"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.search, .searcher{
+    width: 550px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    outline: 0;
+    font-size: 15px;
+    font-family: 'Raleway',"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    padding: 1%;
+}
+
+.table-inventory {
+    padding: 40px;
+    width: 100%;
+}
+
+td:hover {
+    background-color: rgb(158, 158, 197); 
+}
+
+th:hover {
+    background-color: #110f30;
+}
+
+th { 
+    background-color: #2A265F;
+    color: rgb(222, 222, 236); 
+    border-radius: 10px;
+    padding: 40px;
+    font-family: 'Raleway',"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+
+td { 
+    background-color: rgb(217, 217, 240); 
+    padding: 2%;
+    margin: none;
+    font-family: 'Raleway',"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    width: 200px;
+}
+
+.courses-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.course {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgb(0 0 0 / 46%);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+    width: 80%;
+    font-family: 'Raleway',"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+.course-preview {
+	background-color: #2A265F;
+	color: #fff;
+	padding: 30px;
+	max-width: 950px;
+}
+
+.course-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.inf-new-product {
+    width: 70%;
+}
+
+.content-buttons-pagination {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.buttons-pagination {
+    margin: 10px;
+    height: 50px;
+    width: 15%;
+    background-color: rgb(47, 48, 79);
+    color: rgb(195, 196, 230);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 0px;
+    margin-top: 20px;
+}
+
+.buttons-pagination:hover {
+    background-color: rgb(195, 197, 230);
+    color: rgb(47, 48, 79);
+    cursor: pointer;
+}
+
+.buttons-pagination:hover[name='previous'] {
+    transition: 0.4s ease-in-out all;
+    position: relative;
+    right: 10px;
+}
+
+.buttons-pagination:hover[name='next'] {
+    transition: 0.4s ease-in-out all;
+    position: relative;
+    left: 10px;
+}
+
+.content-select-search select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.content-select-search select::-ms-expand {
+    display: none;
+}
+
+.content-select-search{
+	max-width: 100px;
+    max-height: 100px;
+	position: relative;
+}
+ 
+.content-select-search select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 35px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0e7;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:2px solid rgba(33, 40, 70, 0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+ 
+.content-select-search select:hover{
+	background: #15324e;
+}
+
+.content-select-search i{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 13px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #1f2022;
+	border-bottom:4px solid #262729;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+}
+ 
+.content-select-search:hover i{
+	margin-top: 3px;
+}
+
+.paginator {
+    display: flex;
+    justify-content: center;
+    font-family: 
+	'Quicksand', sans-serif;
+    margin-top: -70px;
+    color: #2A265F;
+}
+
+.paginator:hover {
+    transition: all 0.25s ease;
+    color: #8985c5;
+}
+
+/*------Responsive------*/
+
+@media screen and (max-width: 1101px) {
+    .text-header{
+         font-size: 30px;
+    }
+    .search {
+        width: 130px;
+        height: 40px;
+        margin: 2px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .search img{
+        width: 40px;
+    }
+    header{
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1163px) {
+    .searcher{
+         width: 100px;
+         padding-right: 220px;
+         margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .table-inventory{
+        display: block;
+        justify-content: flex-start;
+    }
+    .text-header {
+        padding-left: 20px;
+    }
+    td{
+        width: 169px;
+    }
+    th{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    header {
+        width: auto; overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 679px) {
+    header{
+        height: 150px;
+        width: 150%;
+        padding: 10px;
+    }
+
+    .logo-header{
+        padding-right: 320px;
+    }
+
+    .search{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 461px) {
+    .header {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header {
+        height: 150px;
+        width: 1200px;
+    }
+    
+    .search, select {
+        width: 100px;
+        height: 50px;
+        margin: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search img {
+        width: 20px;
+    }
+    
+    .logo-header img{
+        width: 60px;
+        padding-right: 800px;
+    }
+
+    .logo-header {
+        padding-top: 0px;
+    }
+
+    .text-header {
+        font-size: 30px;
+        padding-left: 60px;
+    }
+
+    .logo-header, .text-header, .search {
+        flex: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    header {
+        width: 1500px;
+    }
+
+    .text-header {
+        padding-left: 10px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .text-header {
+        padding-left: 1px;
+        font-size: 20px;
+    }
+
+    header {
+        width: 1500px;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    header {
+        height: 60px;
+    }
+}
+
+/*Botones ←  →*/
+
+@media screen and (max-width: 720px) {
+    .buttons-pagination[name='previous'] {
+        justify-content: flex-start;
+        margin-left: -70px;
+    }
+    .buttons-pagination {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .buttons-pagination[name='previous'] {
+        justify-content: flex-start;
+        margin-left: 30px;
+    }
+    .buttons-pagination {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .buttons-pagination[name='previous'] {
+        justify-content: flex-start;
+        margin-left: 35px;
+    }
+    .buttons-pagination {
+        width: 130px;
+    }
+}
+
